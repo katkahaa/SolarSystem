@@ -1,0 +1,53 @@
+﻿<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="namespace:AppShell.Views"
+       x:Class="SolarSystem.AppShell">
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Solar System">
+            <ShellContent Title="Planets">
+                <Page></Page>
+            </ShellContent>
+            <ShellContent Title="Dwarf planets">
+                <Page></Page>
+            </ShellContent>
+            <ShellContent Title="Moons">
+                <Page></Page>
+            </ShellContent>
+            <ShellContent Title="Stars">
+                <Page></Page>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Planets">
+            <ShellContent Title="Earth">
+                <Page></Page>
+            </ShellContent>
+            <ShellContent Title="Mars">
+                <Page></Page>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Dwarf Planets">
+            <ShellContent Title="Pluto">
+                <Page></Page>
+            </ShellContent>
+            <ShellContent Title="Mars">
+                <Page></Page>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Moons">
+            <ShellContent Title="Moon">
+                <Page></Page>
+            </ShellContent>
+            <ShellContent Title="Europa">
+                <Page></Page>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Stars">
+            <ShellContent Title="Sun">
+                <Page></Page>
+            </ShellContent>
+            <ShellContent Title="Mars">
+                <Page></Page>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+</Shell>
