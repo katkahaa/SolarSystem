@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SolarSystem.AddPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="DarkSeaGreen"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        Padding="20, 20, 20, 20">
+            <Label Text="New planet"/>
+            <Entry x:Name="EntryCategory" Placeholder="Category"/>
+            <Entry x:Name="EntryName" Placeholder="Name"/>
+            <Entry x:Name="EntryAboutPlanet" Placeholder="About Planet"/>
+            <Button x:Name="ButtonSend" Text="Send" Clicked="ButtonSend_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

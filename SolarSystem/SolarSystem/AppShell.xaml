@@ -1,53 +1,34 @@
 ﻿<Shell xmlns="http://xamarin.com/schemas/2014/forms"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:views="namespace:AppShell.Views"
+       xmlns:views="namespace:SolarSystem"
        x:Class="SolarSystem.AppShell">
+    <Shell.FlyoutHeader>
+    <Frame>
+        <Label Text="SolarSystem" 
+                   Margin="30" FontSize="Large"/>
+    </Frame>
+    </Shell.FlyoutHeader>
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <Tab Title="Solar System">
-            <ShellContent Title="Planets">
-                <Page></Page>
-            </ShellContent>
-            <ShellContent Title="Dwarf planets">
-                <Page></Page>
-            </ShellContent>
-            <ShellContent Title="Moons">
-                <Page></Page>
-            </ShellContent>
-            <ShellContent Title="Stars">
-                <Page></Page>
-            </ShellContent>
-        </Tab>
-        <Tab Title="Planets">
-            <ShellContent Title="Earth">
-                <Page></Page>
-            </ShellContent>
-            <ShellContent Title="Mars">
-                <Page></Page>
-            </ShellContent>
-        </Tab>
-        <Tab Title="Dwarf Planets">
-            <ShellContent Title="Pluto">
-                <Page></Page>
-            </ShellContent>
-            <ShellContent Title="Mars">
-                <Page></Page>
-            </ShellContent>
-        </Tab>
-        <Tab Title="Moons">
-            <ShellContent Title="Moon">
-                <Page></Page>
-            </ShellContent>
-            <ShellContent Title="Europa">
-                <Page></Page>
-            </ShellContent>
-        </Tab>
-        <Tab Title="Stars">
-            <ShellContent Title="Sun">
-                <Page></Page>
-            </ShellContent>
-            <ShellContent Title="Mars">
-                <Page></Page>
-            </ShellContent>
-        </Tab>
+        <ShellContent Title="Solar System">
+            <views:SolarSystemPage/>
+        </ShellContent>
+        <ShellContent Title="Add">
+            <views:AddPage/>
+        </ShellContent>
+        <ShellContent Title="Info">
+            <ContentPage>
+                <ContentPage.Content>
+                    <StackLayout x:Name="MainStackLayout" Orientation="Vertical">
+
+                    <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                        <Label Text="Information about app" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+                    </Frame>
+                    <Label Text="This app was created as homework for school" FontSize="16" Padding="30,0,30,0"/>
+                    <Label FontSize="16" Padding="30,24,30,0">
+                    </Label>
+                    </StackLayout>
+                </ContentPage.Content>
+            </ContentPage>
+        </ShellContent>
     </FlyoutItem>
 </Shell>
